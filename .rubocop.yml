@@ -1,0 +1,9 @@
+AllCops:
+    NewCops: enable
+    Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - 'bin/*'
+
+Style/Documentation:
+    Enabled: false
