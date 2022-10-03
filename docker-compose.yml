@@ -26,11 +26,11 @@ services:
     depends_on:
       - db
       - redis
-  # worker:
-  #   build: .
-  #   command: bundle exec sidekiq
-  #   volumes:
-  #     - .:/app
-  #   depends_on:
-  #     - db
-  #     - redis
+  worker:
+    build: .
+    command: bundle exec sidekiq
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+      - redis
