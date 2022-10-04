@@ -31,6 +31,9 @@ services:
     command: bundle exec sidekiq
     volumes:
       - .:/app
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
     depends_on:
       - db
       - redis
