@@ -1,0 +1,7 @@
+tasks: &tasks
+  ImportUsersWorker:
+    every: 2 hours
+    description: 'Import Users to Database'
+
+:schedule:
+  <<: *tasks
