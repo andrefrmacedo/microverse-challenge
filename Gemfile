@@ -8,6 +8,7 @@ ruby '3.1.2'
 gem 'bootsnap', require: false
 gem 'importmap-rails'
 gem 'jbuilder'
+gem 'kaminari', '~> 1.2'
 gem 'pg', '~> 1.4'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.4'

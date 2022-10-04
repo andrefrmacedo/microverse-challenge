@@ -1,0 +1,12 @@
+<h1>User Page</h1>
+
+<ul>
+  <li>ID: <%= @user.id %></li>
+  <li>First Name: <%= @user.first_name %></li>
+  <li>Last Name: <%= @user.last_name %></li>
+  <li>Status: <%= @user.status %></li>
+  <li>Email: <%= @user.email %></li>
+  <li>Created at: <%= @user.created_at %></li>
+</ul>
+
+<%= link_to "All Users", users_path %>
